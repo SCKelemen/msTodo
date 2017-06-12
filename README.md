@@ -29,7 +29,7 @@ msTodo follows the CRAP schema, and it's RESTful HTTP methods are paired below.
 # TODOS
 
 | CRAP Verb | HTTP Verb | Route    | Example         | Description                 |
-|-----------|----------:|----------|-----------------|-----------------------------|
+|-----------|-----------|----------|-----------------|-----------------------------|
 | Create    | POST      | "/t"     | POST "/t"       | Creates a Todo item         |
 | Retrieve  | GET       | "/t/:id" | GET "/t/123"    | Retrieves Todo item with ID |
 | Alter     | PATCH     | "/t/:id" | PATCH "/t/123"  | Alters Todo item with ID    |
@@ -38,10 +38,28 @@ msTodo follows the CRAP schema, and it's RESTful HTTP methods are paired below.
 # LABELS
 
 | CRAP Verb | HTTP Verb | Route    | Example         | Description             |
-|-----------|----------:|----------|-----------------|-------------------------|
+|-----------|-----------|----------|-----------------|-------------------------|
 | Create    | POST      | "/z"     | POST "/z"       | Creates a Label         |
 | Retrieve  | GET       | "/z/:id" | GET "/z/123"    | Retrieves Label with ID |
 | Alter     | PATCH     | "/z/:id" | PATCH "/z/123"  | Alters Label with ID    |
 | Purge     | DELETE    | "/z/:id" | DELETE "/z/123" | Purges Label with ID    |
+
+# CATEGORIES
+
+| CRAP Verb | HTTP Verb | Route    | Example         | Description                |
+|-----------|-----------|----------|-----------------|----------------------------|
+| Create    | POST      | "/c"     | POST "/c"       | Creates a Category         |
+| Retrieve  | GET       | "/c/:id" | GET "/c/123"    | Retrieves Category with ID |
+| Alter     | PATCH     | "/c/:id" | PATCH "/c/123"  | Alters Category with ID    |
+| Purge     | DELETE    | "/c/:id" | DELETE "/c/123" | Purges Category with ID    |
+
+# STATUSES
+
+| CRAP Verb | HTTP Verb | Route    | Example         | Description              |
+|-----------|-----------|----------|-----------------|--------------------------|
+| Create    | POST      | "/s"     | POST "/s"       | Creates a Status         |
+| Retrieve  | GET       | "/s/:id" | GET "/s/123"    | Retrieves Status with ID |
+| Alter     | PATCH     | "/s/:id" | PATCH "/s/123"  | Alters Status with ID    |
+| Purge     | DELETE    | "/s/:id" | DELETE "/s/123" | Purges Status with ID    |
 
 
