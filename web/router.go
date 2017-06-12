@@ -38,19 +38,47 @@ func ApiRouter() *gin.Engine {
 	api.PATCH("/z/:id", AlterLabel)		//ALTER	Label
 	api.DELETE("/z/:id", PurgeLabel)	//PURGE	Label
 
-	// Categories
-	// [todo]
+	// Comment
+        api.GET("/x", ListComment)                //LIST Comments
+
+        api.POST("/x", CreateComment)             //CREATE Comment
+        api.GET("/x/:id", RetrieveComment)        //RETRIEVE Comment
+        api.PATCH("/x/:id", AlterComment)         //ALTER Comment
+        api.DELETE("/x/:id", PurgeComment)        //PURGE Comment
+
+	// Reaction
+        api.GET("/r", ListReaction)                //LIST Reactions
+
+        api.POST("/r", CreateReaction)             //CREATE Reaction
+        api.GET("/r/:id", RetrieveReaction)        //RETRIEVE Reaction
+        api.PATCH("/r/:id", AlterReaction)         //ALTER Reaction
+        api.DELETE("/r/:id", PurgeReaction)        //PURGE Reaction
 
 	// Statuses
-	// [todo]
+        api.GET("/s", ListStatus)                //LIST Statuses
 
-	// Comment
-	// [todo]
+        api.POST("/s", CreateStatus)             //CREATE Status
+        api.GET("/s/:id", RetrieveStatus)        //RETRIEVE Status
+        api.PATCH("/s/:id", AlterStatus)         //ALTER Status
+        api.DELETE("/s/:id", PurgeStatus)        //PURGE Status
 
-	// Reactions
-	// [todo]
+	// Categories
+        api.GET("/c", ListCategory)                //LIST Categories
 
+        api.POST("/c", CreateCategory)             //CREATE Category
+        api.GET("/c/:id", RetrieveCategory)        //RETRIEVE Category
+        api.PATCH("/c/:id", AlterCategory)         //ALTER Category
+        api.DELETE("/c/:id", PurgeCategory)        //PURGE Category
+
+	// Users
+        api.GET("/u", ListUser)                //LIST Users
+
+        api.POST("/u", CreateUser)             //CREATE User
+        api.GET("/u/:id", RetrieveUser)        //RETRIEVE User
+        api.PATCH("/u/:id", AlterUser)         //ALTER User
+        api.DELETE("/u/:id", PurgeUser)        //PURGE User
 	
+
 
 	// To use auth routes you must have had a JWT token issued to you
 	// and requests must have the following header:
