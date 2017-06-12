@@ -12,19 +12,37 @@ func ApiRouter() *gin.Engine {
 	router.StaticFile("/favicon.ico", "favicon.ico")
 
 	api := router.Group("/api/v1/")
+	
 	// List
-	api.GET("/l", GetLists)			//List Todo Lists
-	api.GET("/l/:id", GetList)		//Get Todo List by ID
-	api.POST("/l", CreateList)		//Create Todo List
-	api.PATCH("/l/:id", UpdateList)		//Update Todo List
-	api.DELETE("/l/:id", RemoveList)	//Delete Todo List
+	api.GET("/l", ListTodo)                 //LIST List
+
+        api.POST("/l", CreateList)              //CREATE List
+        api.GET("/l/:id", RetrieveList)         //RETRIEVE List 
+        api.PATCH("/l/:id", AlterList)          //ALTER List 
+        api.DELETE("/l/:id", PurgeList)         //PURGE List 
+
 
 	// Todo
-	api.GET("/t", GetTodos)			//List All Todos
-	api.GET("/t/:id", GetTodo)		//Get Todo by ID
-	api.POST("/t", CreateTodo)		//Create Todo
-	api.PATCH("/t/:id", UpdateTodo)		//Update Todo
-	api.DELETE("/t/:id", RemoveTodo)	//Delete Todo
+	api.GET("/t", ListTodo)			//LIST Todos
+
+	api.POST("/t", CreateTodo)              //CREATE Todo
+        api.GET("/t/:id", RetrieveTodo)         //RETRIEVE Todo
+        api.PATCH("/t/:id", AlterTodo)          //ALTER Todo
+        api.DELETE("/t/:id", PurgeTodo)         //PURGE Todo
+
+	// Labels
+	api.GET("/z", ListLabel)		//LIST Labels
+
+	api.POST("/z", CreateLabel)		//CREATE Label
+	api.GET("/z/:id", RetrieveLabel)	//RETRIEVE Label
+	api.PATCH("/z/:id", AlterLabel)		//ALTER	Label
+	api.DELETE("/z/:id", PurgeLabel)	//PURGE	Label
+
+	// Categories
+	// [todo]
+
+	// Statuses
+	// [todo]
 
 	// Comment
 	// [todo]
