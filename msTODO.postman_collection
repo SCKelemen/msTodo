@@ -1,0 +1,186 @@
+{
+	"variables": [],
+	"info": {
+		"name": "msTODO",
+		"_postman_id": "d3013fbd-7d53-ac02-8966-acfa1b6703fd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"description": "CRAP-L Category",
+			"item": [
+				{
+					"name": "CREATE Category",
+					"request": {
+						"url": "http://localhost:6969/api/v1/c",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic c0BhbS5jb206cGFzc3dvcmQ=",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"description": "RETRIEVE Categories"
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Categories",
+					"request": {
+						"url": "http://localhost:6969/api/v1/c",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic c0BhbS5jb206cGFzc3dvcmQ=",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"description": "RETRIEVE Categories"
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE Category",
+					"request": {
+						"url": "http://localhost:6969/api/v1/c/123",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ALTER Category",
+					"request": {
+						"url": "http://localhost:6969/api/v1/c/123",
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PURGE Category",
+					"request": {
+						"url": "http://localhost:6969/api/v1/c/123",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"description": "CRAP-L Comment",
+			"item": [
+				{
+					"name": "CREATE Comment",
+					"request": {
+						"url": "http://localhost:6969/api/v1/x",
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Comments",
+					"request": {
+						"url": "http://localhost:6969/api/v1/x",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE Comment",
+					"request": {
+						"url": "http://localhost:6969/api/v1/x/123",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ALTER Comment",
+					"request": {
+						"url": "http://localhost:6969/api/v1/x/123",
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Comment",
+					"request": {
+						"url": "http://localhost:6969/api/v1/x/123",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Label",
+			"description": "CRAP-L Label",
+			"item": []
+		},
+		{
+			"name": "List",
+			"description": "CRAP-L List",
+			"item": []
+		},
+		{
+			"name": "Reaction",
+			"description": "CRAP-L Reaction",
+			"item": []
+		},
+		{
+			"name": "Status",
+			"description": "CRAP-L Status",
+			"item": []
+		},
+		{
+			"name": "Todo",
+			"description": "CRAP-L Todo",
+			"item": []
+		}
+	]
+}

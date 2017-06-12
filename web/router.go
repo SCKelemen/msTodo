@@ -87,9 +87,9 @@ func ApiRouter() *gin.Engine {
 	// Use a JWT middleware authentication handler to only allow requests 
 	// that have been signed by our 'mysupersecretpassword' secret
 	auth.Use(jwt.Auth("mysupersecretpassword"))
-	auth.GET("/resetpassword", GetResetPassword)
-	auth.POST("/resetpassword", PostResetPassword)
-	auth.POST("/image", PostImage)
+	//auth.GET("/resetpassword", GetResetPassword)
+	//auth.POST("/resetpassword", PostResetPassword)
+	//auth.POST("/image", PostImage)
 	
 	return router;
 }
