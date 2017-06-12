@@ -11,11 +11,6 @@ msTodo follows the CRAP schema, and it's RESTful HTTP methods are paired below.
 
 # Routes
 
-/l	lists
-/t	todos
-/u	users
-/b	board 
-/z	label	
 
 # LISTS
 
@@ -62,4 +57,29 @@ msTodo follows the CRAP schema, and it's RESTful HTTP methods are paired below.
 | Alter     | PATCH     | "/s/:id" | PATCH "/s/123"  | Alters Status with ID    |
 | Purge     | DELETE    | "/s/:id" | DELETE "/s/123" | Purges Status with ID    |
 
+# COMMENTS 
 
+| CRAP Verb | HTTP Verb | Route    | Example         | Description               |
+|-----------|-----------|----------|-----------------|---------------------------|
+| Create    | POST      | "/x"     | POST "/x"       | Creates a Comment         |
+| Retrieve  | GET       | "/x/:id" | GET "/x/123"    | Retrieves Comment with ID |
+| Alter     | PATCH     | "/x/:id" | PATCH "/x/123"  | Alters Comment with ID    |
+| Purge     | DELETE    | "/x/:id" | DELETE "/x/123" | Purges Comment with ID    |
+
+# REACTIONS
+
+| CRAP Verb | HTTP Verb | Route    | Example         | Description                |
+|-----------|-----------|----------|-----------------|----------------------------|
+| Create    | POST      | "/r"     | POST "/r"       | Creates a Reaction         |
+| Retrieve  | GET       | "/r/:id" | GET "/r/123"    | Retrieves Reaction with ID |
+| Alter     | PATCH     | "/r/:id" | PATCH "/r/123"  | Alters Reaction with ID    |
+| Purge     | DELETE    | "/r/:id" | DELETE "/r/123" | Purges Reaction with ID    |
+
+# USERS
+
+| CRAP Verb | HTTP Verb | Route    | Example         | Description            |
+|-----------|-----------|----------|-----------------|------------------------|
+| Create    | POST      | "/u"     | POST "/u"       | Creates a User         |
+| Retrieve  | GET       | "/u/:id" | GET "/u/123"    | Retrieves User with ID |
+| Alter     | PATCH     | "/u/:id" | PATCH "/u/123"  | Alters User with ID    |
+| Purge     | DELETE    | "/u/:id" | DELETE "/u/123" | Purges User with ID    |
