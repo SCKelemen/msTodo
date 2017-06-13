@@ -160,27 +160,307 @@
 		{
 			"name": "Label",
 			"description": "CRAP-L Label",
-			"item": []
+			"item": [
+				{
+					"name": "CREATE Label",
+					"request": {
+						"url": "http://localhost:6969/api/v1/z",
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Labels",
+					"request": {
+						"url": "http://localhost:6969/api/v1/z",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE Label",
+					"request": {
+						"url": "http://localhost:6969/api/v1/z/123",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ALTER Label",
+					"request": {
+						"url": "http://localhost:6969/api/v1/z/123",
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Label",
+					"request": {
+						"url": "http://localhost:6969/api/v1/z/123",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "List",
 			"description": "CRAP-L List",
-			"item": []
+			"item": [
+				{
+					"name": "CREATE List",
+					"request": {
+						"url": "http://localhost:6969/api/v1/l",
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Lists",
+					"request": {
+						"url": "http://localhost:6969/api/v1/l",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE List",
+					"request": {
+						"url": "http://localhost:6969/api/v1/l/123",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ALTER List",
+					"request": {
+						"url": "http://localhost:6969/api/v1/l/123",
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE List",
+					"request": {
+						"url": "http://localhost:6969/api/v1/l/123",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Reaction",
 			"description": "CRAP-L Reaction",
-			"item": []
+			"item": [
+				{
+					"name": "CREATE Reaction",
+					"request": {
+						"url": "http://localhost:6969/api/v1/r",
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Reaction",
+					"request": {
+						"url": "http://localhost:6969/api/v1/r",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE Reaction",
+					"request": {
+						"url": "http://localhost:6969/api/v1/r/123",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ALTER Reaction",
+					"request": {
+						"url": "http://localhost:6969/api/v1/r/123",
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Reaction",
+					"request": {
+						"url": "http://localhost:6969/api/v1/r/123",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Status",
 			"description": "CRAP-L Status",
-			"item": []
+			"item": [
+				{
+					"name": "CREATE Status",
+					"request": {
+						"url": "http://localhost:6969/api/v1/s",
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Statuses",
+					"request": {
+						"url": "http://localhost:6969/api/v1/s",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE Status",
+					"request": {
+						"url": "http://localhost:6969/api/v1/s/123",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ALTER Status",
+					"request": {
+						"url": "http://localhost:6969/api/v1/s/123",
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Status",
+					"request": {
+						"url": "http://localhost:6969/api/v1/s/123",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Todo",
 			"description": "CRAP-L Todo",
-			"item": []
+			"item": [
+				{
+					"name": "CREATE Todo",
+					"request": {
+						"url": "http://localhost:6969/api/v1/t",
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Todos",
+					"request": {
+						"url": "http://localhost:6969/api/v1/t",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE Todo",
+					"request": {
+						"url": "http://localhost:6969/api/v1/t/123",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ALTER Todo",
+					"request": {
+						"url": "http://localhost:6969/api/v1/t/123",
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Todo",
+					"request": {
+						"url": "http://localhost:6969/api/v1/t/123",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
