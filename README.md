@@ -2,12 +2,19 @@
 msTodo is a microservice plugin for the framework which exposes methods for Todo Items and lists. 
 msTodo follows the CRAP schema, and it's RESTful HTTP methods are paired below.
 
-| CRAP Verb | HTTP Verb | SHIT Verb  |
-|-----------|-----------|------------|
-| Create    | POST      | Set        |
-| Retrieve  | GET       | Hail       |
-| Alter     | PATCH     | Initialize |
-| Purge     | DELETE    | Terminate  |
+| CRAP Verb | HTTP Verb |
+|-----------|-----------|
+| Create    | POST      |
+| Retrieve  | GET       |
+| Alter     | PATCH     |
+| Purge     | DELETE    |
+
+| SHIT Verb  | HTTP Verb |
+|------------|-----------|
+| Set        | PATCH     |
+| Hail       | GET       |
+| Initialize | POST      |
+| Terminate  | DELETE    |
 
 # Routes
 
