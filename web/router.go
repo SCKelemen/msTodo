@@ -3,11 +3,13 @@ package web
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/contrib/jwt"
+	"github.com/mattn/go-colorable"
+
 )
 
 func ApiRouter() *gin.Engine {
 	router := gin.Default()
-	
+	gin.DefaultWriter = colorable.NewColorableStdout()
 	router.StaticFile("/robots.txt", "robots.txt")
 	router.StaticFile("/favicon.ico", "favicon.ico")
 
