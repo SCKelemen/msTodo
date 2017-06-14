@@ -6,12 +6,12 @@ msTodo follows the CRAP schema, and it's RESTful HTTP methods are paired below.
 |-----------|-----------|
 | Create    | POST      |
 | Retrieve  | GET       |
-| Alter     | PATCH     |
+| Alter     | PATCH/PUT |
 | Purge     | DELETE    |
 
 | SHIT Verb  | HTTP Verb |
 |------------|-----------|
-| Set        | PATCH     |
+| Set        | PATCH/PUT |
 | Hail       | GET       |
 | Initialize | POST      |
 | Terminate  | DELETE    |
